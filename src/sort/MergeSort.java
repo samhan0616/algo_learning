@@ -15,8 +15,6 @@ public class MergeSort {
 			sort(arr, mid+1, right);
 			//合并
 			merge(arr, left, right);
-			
-			SortUtil.printArr(arr);
 		}
 	}
 	
