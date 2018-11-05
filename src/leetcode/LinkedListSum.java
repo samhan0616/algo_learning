@@ -1,4 +1,4 @@
-package struct;
+package leetcode;
 
 public class LinkedListSum {
 	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

@@ -17,6 +17,7 @@ public class TwoSum {
       int index;
      if ((index = Arrays.binarySearch(arr, i, arr.length, target - arr[i])) > 0) {
        return new int[] {arr[i] , arr[index]};
+
      }
     }
     return null;

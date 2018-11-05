@@ -28,16 +28,12 @@ public class SortUtil {
 		}
 
 	}
-	static void swap(int[]nums, int i, int j){
+	public static void swap(int[]nums, int i, int j){
 		nums[i] = nums[i] ^ nums[j];
 		nums[j] = nums[j] ^ nums[i];
 		nums[i] = nums[i] ^ nums[j];
 	}
 	public static void printArr(int[] arr){
-		System.out.print("[ ");
-		for (int i : arr) {
-			System.out.print( i + ", ");
-		}
-		System.out.println("]");
+		System.out.println(Arrays.toString(arr));
 	}
 }

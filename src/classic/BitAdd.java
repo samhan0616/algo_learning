@@ -1,4 +1,6 @@
-package struct;
+package classic;
+
+import java.util.Arrays;
 
 public class BitAdd {
 	public static void main(String[] args) {
@@ -11,5 +13,6 @@ public class BitAdd {
 		 int sum = a ^ b;
 		 int carry = (a&b) << 1;
 		 return bitAdd(sum, carry);
+
 	}
 }

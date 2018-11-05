@@ -1,4 +1,4 @@
-package struct;
+package leetcode;
 
 import java.util.HashMap;
 
