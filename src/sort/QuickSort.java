@@ -117,15 +117,10 @@ public class QuickSort {
 
   public static int partition(int[] a, int left, int right) {
 
-    int i = left - 1, j = left;
-    int key = a[right];
-    for (; j <= right - 1; j ++) {
-      if (a[j] <= key) {
-        swap(a, ++i, j);
-      }
-      System.out.println(Arrays.toString(a));
-    }
-    swap(a, ++i, right);
+    int i = left, j = right, pivot = a[j];
+    while (i < j)
+    	if (a[i++] > pivot) swap(a, --i, --j);
+    swap(a, i , right);
     return i;
   }
 
@@ -169,7 +164,7 @@ public class QuickSort {
 //    System.out.println(Arrays.toString(arr));
 //    quickSort(arr, 0, arr.length - 1);
 //    System.out.println(Arrays.toString(arr));
-	  quickSort2(arr, 0, arr.length - 1);
+	  quickSort(arr, 0, arr.length - 1);
     System.out.println(Arrays.toString(arr));
   }
 

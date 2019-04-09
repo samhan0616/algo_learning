@@ -9,7 +9,7 @@ public class MergeSort {
 	public static void sort(int[] arr, int left, int right) {
 		int mid = (right + left) / 2;
 		if (left < right) {
-			//分左边
+
 			sort(arr, left, mid);
 			//分右边
 			sort(arr, mid+1, right);
@@ -22,7 +22,7 @@ public class MergeSort {
 		int mid = (right + left) / 2;
 		int[] temp = new int[right - left + 1];
 		int count = 0;
-		
+
 		int l = left;
 		int r = mid + 1;
 		

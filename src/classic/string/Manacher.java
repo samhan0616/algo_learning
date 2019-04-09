@@ -1,4 +1,4 @@
-package classic;
+package classic.string;
 
 /**
  * @author create by Xiao Han 10/25/18
