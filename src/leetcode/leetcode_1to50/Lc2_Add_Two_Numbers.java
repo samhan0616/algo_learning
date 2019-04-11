@@ -1,4 +1,6 @@
-package leetcode;
+package leetcode.leetcode_1to50;
+
+import leetcode.util.ListNode;
 
 /**
  * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
@@ -15,15 +17,7 @@ package leetcode;
  * @version 1.0
  * @since jdk 1.8
  */
-public class AddTwoNumbers {
-
-
-   static class ListNode {
-      int val;
-      ListNode next;
-     ListNode(int x) { this.val = x; }
-    }
-
+public class Lc2_Add_Two_Numbers {
 
   public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     int sum = l1.val + l2.val;
